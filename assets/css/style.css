@@ -16,10 +16,10 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: #fff;
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
+  background-image: linear-gradient(120deg,#141b29,#124143);
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 .gradient {
-  background: linear-gradient(120deg, #005792, #53CDE2);
+  background: linear-gradient(120deg, #141b29, #124143);
   color: #fff;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 a:hover {
-  color: #53CDE2;
+  color: #5ac994;
 }
 
 .navbar-brand {
@@ -143,7 +143,7 @@ a:hover {
 }
 
 a {
-  color: #53CDE2;
+  color: #c0f7b7;
   text-decoration: none;
 }
 
@@ -301,13 +301,13 @@ ol, ul {
 }
 
 .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 .25rem #53CDE2;
+  box-shadow: 0 0 0 .25rem #124143;
 }
 
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
-  color: #fff;
-  background-color: #53CDE2;
-  border-color: #D1F4FA;
+  color: #141b29;
+  background-color: #c0f7b7;
+  border-color: #124143;
 }
 
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
@@ -322,19 +322,24 @@ ol, ul {
 
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 .25rem #53cde2;
+  box-shadow: 0 0 0 .25rem #c0f7b7;
 }
 
 .btn-outline-primary {
-  color: #53CDE2;
-  border-color: #53CDE2;
+  color: #124143;
+  background: #fff;
+  border-top-right-radius: 0;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 14px;
+  border-color: #124143;
 }
 
 .special-skill-item .icon {
   text-align: center;
   font-size: 50px;
-  background-color: #005792;
-  color: #fff;
+  background-color: #5ac994;
+  color: #141b29;
   height: 70px;
   width: 70px;
   line-height: 69px;
@@ -345,7 +350,7 @@ ol, ul {
 .page-footer .social-icons a {
   font-size: 18px;
   margin: 0 3px;
-  color: #005792;
+  color: #124143;
   border: 1px solid;
   opacity: .75;
   border-radius: 50%;
@@ -377,5 +382,112 @@ ol, ul {
 
 .text-left.text {
   margin-top: 20px;
+}
+
+.page-footer a {
+  display: inline-block;
+  margin: 0px 10px;
+  color: #c0f7b7;
+  font-size: 18px;
+}
+
+.card {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #141b29;
+  background-clip: border-box;
+  border: 1px solid #c0f7b7;
+  border-radius: .25rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #141b29 !important;
+}
+
+.page-footer {
+  padding-top: 35px;
+  border-top: 1px solid #124143;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.portfolio-block.cv .group .period {
+  font-size: .8rem;
+  float: right;
+  font-weight: bold;
+  margin-top: 4px;
+  color: inherit;
+  opacity: .8;
+}
+
+.portfolio-block.cv .group .organization {
+  font-size: .85em;
+  background-color: #0ea0ff;
+  display: inline-block;
+  color: #141b29;
+  padding: 2px 8px;
+  border-radius: 2em;
+}
+
+.contact-info.portfolio-info-card {
+  background-color: #141b29;
+}
+
+.skills.portfolio-info-card {
+  background-color: #141b29;
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #fff !important;
+}
+
+.special-skill-item p {
+  color: #fff;
+}
+
+.page-footer {
+  background-image: linear-gradient(#124143,#141b29);
+}
+
+.portfolio-block.skills {
+  border-bottom: 1px solid #141b29;
+}
+
+.portfolio-block.website.gradient {
+  background: #141b29;
+}
+
+.portfolio-block.cv .group .item {
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #c0f7b7;
+}
+
+.portfolio-info-card.contact-info .icon {
+  font-size: 1.3em;
+  color: #6091ef;
+  position: relative;
+  bottom: 4px;
+}
+
+.portfolio-block.projects-cards a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.trans-2 {
+  background-image: linear-gradient(rgba(0,0,0,0),#124143);
+  width: 100%;
+  height: 100px;
+  margin-top: -100px;
+}
+
+.trans-2.trans {
+  margin-top: 0;
 }
 
